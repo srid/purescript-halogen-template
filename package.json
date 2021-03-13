@@ -2,13 +2,13 @@
   "private": true,
   "devDependencies": {
     "parcel": "1.12.3",
-    "purescript": "^0.14.0",
     "spago": "^0.19.1"
   },
   "scripts": {
-    "build": "spago build",
+    "build": "nix-shell --run 'spago build'",
     "test": "spago test",
-    "serve": "parcel dev/index.html --open",
+    "serve": "nix-shell --run 'parcel dev/index.html --open'",
+    "pscid": "nix-shell --run pscid",
     "build-prod": "mkdir -p prod && cp dev/index.html prod/ && rm -rf dist && spago bundle-app --to prod/index.js && parcel build prod/index.html"
   }
 }

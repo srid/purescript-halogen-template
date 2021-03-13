@@ -2,11 +2,10 @@
 
 ### Quick Start
 ```sh
-git clone https://github.com/purescript-halogen/purescript-halogen-template.git halogen-project
-cd halogen-project
-npm install
-npm run build
-npm run serve
+npm install parcel
+npm run-script build
+npm run-script serve
+# npm run-script pscid (if you need it)
 ```
 
 ### Introduction

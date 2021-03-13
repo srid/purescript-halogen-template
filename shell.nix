@@ -8,9 +8,6 @@ in
       easy-ps.psc-package
       easy-ps.spago
       easy-ps.pscid
-      # `npm install` builds PS using its stack.yml which is on lts-13.26 (ghc 8.6.5)
-      pkgs.stack
-      pkgs.haskell.compiler.ghc865
     ];
   }
 
